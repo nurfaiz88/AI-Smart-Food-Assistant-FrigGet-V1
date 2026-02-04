@@ -1,0 +1,20 @@
+[
+  {
+    "name": "the only food visible in the image is an egg.",
+    "added": "2026-01-26",
+    "expiry": "2026-01-31",
+    "image_path": "images\\eggs_2026-01-26.jpeg"
+  },
+  {
+    "name": "there are no visible foods in this image.",
+    "added": "2026-01-27",
+    "expiry": "2026-02-01",
+    "image_path": "images\\there_are_no_visible_foods_in_this_image._2026-01-27.png"
+  },
+  {
+    "name": "taco shell",
+    "added": "2026-01-27",
+    "expiry": "2026-02-01",
+    "image_path": "images\\taco_shell_2026-01-27.png"
+  }
+]
