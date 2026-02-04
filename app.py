@@ -7,7 +7,7 @@ from openai import OpenAI
 
 # ---------------- CONFIG ----------------
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-st.set_page_config(page_title="Fridgeify", layout="wide")
+st.set_page_config(page_title="FrigGet", layout="wide")
 
 # ---------------- STATE ----------------
 if "inventory" not in st.session_state:
@@ -21,7 +21,7 @@ if "page" not in st.session_state:
     st.session_state.page = "scan"
 
 # ---------------- HEADER ----------------
-st.title("🧊 Fridgeify AI")
+st.title("🧊 FirgGet AI")
 
 # ---------------- NAV ----------------
 c1, c2, c3 = st.columns(3)
@@ -175,5 +175,6 @@ Keep it clear and readable.
                     st.text(recipe_text)
                 except:
                     st.error("Recipe generation failed.")
+
 
 
