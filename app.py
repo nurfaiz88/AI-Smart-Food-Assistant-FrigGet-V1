@@ -9,7 +9,7 @@ from openai import OpenAI
 os.environ["OPENAI_API_KEY"] = "YOUR_OPENAI_KEY"
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-st.set_page_config(page_title="Fridgeify (Pi Optimized)", layout="wide")
+st.set_page_config(page_title="FirgGet (Pi Optimized)", layout="wide")
 
 IMAGE_DIR = "images"
 os.makedirs(IMAGE_DIR, exist_ok=True)
@@ -29,7 +29,7 @@ if "camera_open" not in st.session_state:
     st.session_state.camera_open = False
 
 # ---------------- HEADER ----------------
-st.title("🧊 Fridgeify AI (Pi Optimized)")
+st.title("🧊 FirgGet AI (Pi Optimized)")
 
 # ---------------- NAV ----------------
 c1, c2, c3 = st.columns(3)
@@ -233,3 +233,4 @@ Keep it clear and readable.
                     st.text(res.output_text)
                 except Exception as e:
                     st.error(f"Recipe generation failed: {e}")
+
